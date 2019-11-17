@@ -8,7 +8,7 @@ const app = express(); // khởi tạo express (create your express app)
 
 const mongo = require('mongodb')
 const MongoClient = mongo.MongoClient
-const uri = 'mongodb+srv://anpt:123@cluster0-pmgxu.mongodb.net/test?retryWrites=true&w=majority'
+const uri = 'YOUR_CONNECTION_STRING'
 var client;
 
 var mongoClient = new MongoClient(uri, { reconnectTries: Number.MAX_VALUE, autoReconnect: true, useNewUrlParser: true, useUnifiedTopology: true }) // allows for connection to the db
